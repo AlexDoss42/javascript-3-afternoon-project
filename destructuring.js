@@ -72,7 +72,10 @@ function totalPopulation(obj){
 
 //Code Here
 
-
+function ingredients(obj){
+  let {carb, fat, protein} = obj
+  return array = [carb, fat, protein]
+}
 
 ////////// PROBLEM 5 //////////
 
@@ -90,7 +93,9 @@ function totalPopulation(obj){
 
 //Code Here
 
-
+function largeNumbers({first, second, third}){
+  return Math.min(first, second, third)
+}
 
 ////////// PROBLEM 6 //////////
 
@@ -102,4 +107,12 @@ function totalPopulation(obj){
 
 //Code Here
 
-
+function numberGroups({a, b, c}){
+  if(a.length > b.length && a.length > c.length){
+    return a
+  } else if (b.length > c.length){
+    return b
+  } else {
+    return c
+  }
+}
