@@ -175,7 +175,14 @@ for(prop in deleteTheBigNumbers){
 
 //Code Here
 
-
+function startsWithK(obj){
+  for(prop in obj){
+    if(prop.startsWith('k')){
+      delete obj[prop]
+    }
+  }
+  return obj
+}
 
 ////////// PROBLEM 8 //////////
 
@@ -189,5 +196,11 @@ for(prop in deleteTheBigNumbers){
 */
 
 //Code Here
-
-
+function hiddenTreasure(obj){
+  for(prop in obj){
+    if(!obj[prop].includes('treasure')){
+      delete obj[prop]
+    }
+  }
+  return obj
+}
