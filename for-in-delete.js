@@ -64,7 +64,7 @@ function greaterThan10(object){
       object[prop] = 0
     }
   }
-  console.log(object)
+
   return object
 }
 
@@ -136,7 +136,10 @@ function secrets(obj){
 
 //Code Here
 
-
+function removePassword(obj){
+  delete obj['password']
+  return obj
+}
 
 ////////// PROBLEM 6 //////////
 
@@ -155,7 +158,11 @@ var deleteTheBigNumbers = {
 
 //Code Here
 
-
+for(prop in deleteTheBigNumbers){
+  if(deleteTheBigNumbers[prop] > 100){
+    delete deleteTheBigNumbers[prop]
+  }
+}
 
 ////////// PROBLEM 7 //////////
 
