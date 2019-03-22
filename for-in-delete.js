@@ -78,7 +78,12 @@ function greaterThan10(object){
 
 //Code Here
 
-
+function double(obj){
+  for(prop in obj){
+    obj[prop] *= 2
+  }
+  return obj
+}
 
 ////////// PROBLEM 4 //////////
 
@@ -92,7 +97,15 @@ function greaterThan10(object){
 
 //Code Here
 
-
+function secrets(obj){
+  let tongueTwister = ''
+  for(prop in obj){
+    if(prop.startsWith('sh')){
+      tongueTwister += obj[prop]
+    }
+  }
+  return tongueTwister
+}
 
 /* 
   Sometimes it's needed to delete object properties. 
