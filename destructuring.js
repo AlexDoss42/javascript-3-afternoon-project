@@ -23,7 +23,7 @@ var carDetails = {
 
 //Code Here
 
-
+let {color, make, model, year}  = {color: 'red', make: 'toyota', model: 'tacoma', year: 1994}
 
 ////////// PROBLEM 2 //////////
 
@@ -35,7 +35,7 @@ var carDetails = {
 
 function greeting( obj ) {
   //Code Here
-  
+  let {firstName, lastName, title} = obj
   // Do not edit the code below.
   return 'Hello, ' + title + ' ' + firstName + ' ' + lastName + '!';
   // Do not edit the code above.
@@ -55,7 +55,10 @@ function greeting( obj ) {
 
 //Code Here
 
-
+function totalPopulation(obj){
+  let {utah, california, texas, arizona} = obj
+  return total = utah + california + texas + arizona
+}
 
 ////////// PROBLEM 4 //////////
 
